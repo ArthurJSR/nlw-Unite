@@ -1,8 +1,8 @@
 <p align="center">
-  <img alt="Logo NLW Expert - Rocketseat" scr=".images_repository/logo.png" width="200px"/>
+  <img alt="Logo NLW Expert - Rocketseat" src=".images_repository/logo.png" width="200px" />
 </p>
 
-<p>
+<p align="center">
 Aplicação desenvolvida no NLW Unite da Rocketseat na trilha HTML+CSS+JS.
 </p>
 
