@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
-
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+
         <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
-        <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+        <script>
+            dayjs.extend(window.dayjs_plugin_relativeTime)
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
         <script>
             dayjs.locale('pt-br')
@@ -15,12 +22,26 @@
     </head>
     
     <body>
+
+        <form onsubmit="adicionarParticipante(event)">
+            <fieldset>
+                <legend>Inscrição</legend>
+                <div>
+                    <input type="text" placeholder="Nome completo" name="nome" required>
+                    <input type="email" placeholder="E-mail" name="email" required>
+                    <button>
+                        Realizar inscrição
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+
         <table width="100%">
             <thead style="text-align: left">
                 <tr>
-                    <td><h2><strong>Participante</strong></h2></td>
-                    <td><h2><strong>Data da Inscrição</strong></h2></td>
-                    <td><h2><strong>Data do Checking</strong></h2></td>
+                    <td>Participante</td>
+                    <td>Data da Inscrição</td>
+                    <td>Data do Check-In</td>
                 </tr>
             </thead>
           
